@@ -2,16 +2,15 @@ version: 0.2
 
 phases:
   install:
-    Commands:
+    commands:
       - echo installing dependencies
-       # no dependencies needed for static HTML
-
+      # no dependencies needed for static HTML
 
   build:
-    Commands:
+    commands:
       - echo Build project.
-      - ls -la (lists files for verification)
+      - ls -la # lists files for verification
 
 artifacts:
   files:
-     - '**/*'      #(includes all project files in the output)
+    - '**/*'  # includes all project files in the output
